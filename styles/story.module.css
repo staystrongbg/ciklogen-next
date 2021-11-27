@@ -72,8 +72,17 @@
   background-color: rgb(0, 0, 0);
   background-attachment: fixed;
   /* border: 10px solid black; */
+  /* filter: sepia(); */
+  animation: blurOut 1.6s alternate;
 }
-
+@keyframes blurOut {
+  0% {
+    filter: sepia() blur(6px);
+  }
+  100% {
+    filter: none;
+  }
+}
 .content {
   font-family: 'Fira Sans Condensed', sans-serif;
   position: absolute;

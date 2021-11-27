@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
 import styles1 from '../styles/resp_img.module.css';
 const Modal = ({ src, showmodal }) => {

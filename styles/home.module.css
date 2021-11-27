@@ -48,7 +48,9 @@
   top: 25px;
   right: 25px;
   background-color: transparent;
-  fill: #000;
+  /* fill: #000; */
+  fill: #f2f1ee;
+  filter: drop-shadow(1px 1px 1px #000);
   border: none;
   z-index: 9;
   font-size: 1.5rem;
@@ -109,7 +111,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* animation: blurOut 1.6s ease-out; */
 }
+@keyframes blurOut {
+  0% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: sepia();
+  }
+}
+
 .bg-text {
   width: 90vw;
   text-align: center;
@@ -213,16 +225,15 @@
   text-align: center;
   letter-spacing: -0.75rem;
   overflow-wrap: break-word;
-  text-shadow: 4px 4px 10px #f2f1ee;
 }
 .desc {
   font-family: 'Pacifico';
   font-style: italic;
-  color: #000;
   font-size: 3rem;
   overflow-wrap: break-word;
   text-transform: capitalize;
-  text-shadow: 1px 1px 1px #f2f1ee;
+  color: #f2f1ee;
+  text-shadow: 2px 2px 2px #000;
 }
 .read-more {
   background-color: #121212;

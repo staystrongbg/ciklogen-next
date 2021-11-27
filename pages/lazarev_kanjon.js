@@ -11,7 +11,6 @@ import Row from '../components/imageRow';
 
 const Lazin = () => {
   const info = data.filter((item) => item.name === 'lazarev kanjon');
-  console.log(info);
 
   return (
     <>

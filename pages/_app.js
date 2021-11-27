@@ -1,14 +1,11 @@
-import Layout from '../comps/layout';
-import { AppProvider } from '../context';
-import '../styles/globals.scss';
+import '../styles/globals.css';
+import Layout from '../components/layout';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AppProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </AppProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

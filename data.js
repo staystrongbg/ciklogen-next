@@ -1,110 +1,87 @@
-const data = {
-  info: [
-    {
-      image: '/sala/kameleon-sala-3.jpg',
-      title: 'Sala za proslave',
-      text: 'Eksluzivna svečana velika sala kapaciteta od **80 do 300**  mesta idealna za organizaciju venčanja ili svadbi, punoletstva, krštenja, kao i za sve vrste drugih proslava i svečanosti.',
-      link: '/svecana',
-    },
-    {
-      image: '/ketering-slike-nove/rightbg.jpg',
-      title: 'Ketering',
-      text: '**Kameleon 2021** iza sebe ima veoma uspešan tim, tim koji prvenstveno vodi računa o kvalitetu, ukusu i naravno izgledu Vaših obroka. Predlažemo da nas kontaktirate. Mi na vaš poziv možemo doći, predstaviti našu ponudu uz degustaciju uz koju ćete se lično uveriti u kvalitet naših jela. Kompletan obrok od prvoklasnih namirnica, će na radnom mestu Vašim zaposlenima uštedeti vreme, novac i energiju. Naša ponuda podrazumeva pripremu i dostavu gotovih jela, a naš tim svake nedelje kreira novi jelovnik sa više opcija za Vas.',
-      link: '/ketering',
-    },
-  ],
-  description: [
-    {
-      title: 'Ketering 2021',
-      desc: 'banket & ketering',
-      about:
-        '**Sala Kameleon 2021** je idealno mesto gde ćete proslaviti najlepše trenutke u životu. Nudimo veliki izbor najkvalitetnije hrane. Sva pažnja naših zaposlenih je usmerena na želje klijenata. Svaka naša proslava je posebna i drugačija od drugih, jer sve planiramo sa posebnim stilom. Sala je klimatizovana i ima obezbeđen parking. **Neka Vaši snovi postanu stvarnost,dođite i uverite se da je sala Kameleon najbolji izbor za Vaše venčanje i proslave.**',
-    },
-  ],
-  heroContent: [
-    {
-      klasa: 'left',
-      id: 'proslave',
-      head: 'sala za proslave',
-      text: ' ekskluzivna sala za sve vrste proslava',
-      overlay: 'proslaveCL',
-    },
-    {
-      klasa: 'right',
-      id: 'ketering',
-      head: 'ketering',
-      text: 'hrana po vašem ukusu',
-      overlay: 'keteringCR',
-    },
-  ],
-  phones: ['062 222 132', '061 30 10 400', '061 30 10 400'],
-  links: [
-    { link: 'početna', path: '/' },
-    {
-      id: 'ketering',
-      link: 'ketering',
-      path: '/ketering',
-      sublinks: [
-        {
-          link: 'ketering za proslave',
-          hyperlink: 'proslave',
-        },
-        {
-          link: 'slatki ketering',
-          hyperlink: 'slatki',
-        },
-        {
-          link: 'ketering za firme',
-          hyperlink: 'firme',
-        },
-      ],
-    },
-    { link: 'proslave', path: '/proslave' },
-    { link: 'svečana sala', path: '/svecana' },
-    { link: 'kontakt', path: '/kontakt' },
-  ],
-  hyperlinks: [
-    {
-      link: '#firme',
-      title: 'Ketering za Firme',
-      imgSrc: '/ketering-slike-nove/22.jpg',
-    },
-    {
-      link: '#proslave',
-      title: 'Ketering za Proslave',
-      imgSrc: '/ketering-slike-nove/proslave/5.jpg',
-    },
-    {
-      link: '#slatki',
-      title: 'Slatki Ketering',
-      imgSrc: '/ketering-slike-nove/slatki/1.jpg',
-    },
-  ],
-  keteringInfo: [
-    {
-      heading:
-        '## Savršen izbor i prava odluka ukoliko želite da se zdravo i ukusno hranite na radnom mestu!',
-      body: 'Kuvana jela se isporučuju u nepovratnoj ambalaži sa pratećim nepovratnim inventarom. Svake nedelje kreiramo novi jelovnik sa više opcija (**vege, posno, hrono, domaća kuhinja**) i šaljemo ga unapred kako bi vaši zaposleni mogli na vreme da odaberu šta žele da jedu na dnevnom nivou. Standardni jelovnik obuhvata hleb, glavno jelo, prilog, salatu i dezert. **Supu, čorbu ili potaž možete poručiti ako želite.**',
-    },
-  ],
-
-  fsKetering: [
-    {
-      imgSrc: '/ketering-slike-nove/1.jpg',
-      title: 'slatki program',
-      text: 'za uživanje u svakom zalogaju',
-    },
-    {
-      imgSrc: '/ketering-slike-nove/2.jpg',
-      title: 'korporativni program',
-      text: 'zdrava hrana za vaše osoblje',
-    },
-    {
-      imgSrc: '/ketering-slike-nove/3.jpg',
-      title: 'slavski program',
-      text: 'pripremamo hranu po Vašoj želji',
-    },
-  ],
-};
-
-export default data;
+const links = [
+  {
+    name: 'zelengora',
+    heading: 'Zelengora',
+    text: 'Pešačka tura Zelengora 2019',
+    url: '/zelengora',
+    css_class: 'img7',
+    intro: 'Maksa, Djole i ekipa na hiking turi',
+    autor: 'piskaranje i slike by Maksa',
+    datum: 'leto 2019',
+  },
+  {
+    name: 'fruška gora',
+    heading: 'fruška gora',
+    text: 'naša draga fruška gora',
+    url: '/fruska_gora',
+    css_class: 'img0',
+    intro:
+      'Bez preciznog plana, bez mape, oskudno opremljeni i sa tankim iskustvom Maksa i Zoran u oazi netaknute, predivne i surove prirode - stanište poskoka, šakala, slepih miševa i lisica - u potrazi za avanturom.',
+    autor: 'Writings and photos by Zoran Lazarević',
+    datum: 'Septembar 2013',
+  },
+  {
+    name: 'lazarev kanjon',
+    heading: 'istok',
+    text: ' Južni Kučaj, Istočna Srbija',
+    url: '/lazarev_kanjon',
+    css_class: 'img1',
+    intro:
+      '  7 Sati ujutro. Maksa pristiže, spakovani smo i spremni za polazak u do sada najveću avanturu. Odredište je grad Zlot-Lazareva pećina, Istočni deo Srbije, najredje naseljeno područje ljudima ali vegetacija kao i životinjski svet buja što je definitivno jedan od razloga zašto smo se tamo uputili. Zlot je udaljen 220km od Beograd i putovaćemo mimo glavnih puteva.',
+    autor: 'Writings and photos by Zoran Lazarević',
+    datum: '11-15. avg. 2014',
+  },
+  {
+    name: 'tara-Stara',
+    heading: 'Tara',
+    text: 'tura stara - stara prvi deo',
+    url: '/tara_stara',
+    css_class: 'img2',
+    intro: 'Mire i Zoran na turi od Beograda preko Tare na Kopaonik',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    datum: 'maj 2015',
+  },
+  {
+    name: 'putešestvije',
+    heading: 'putešestvije',
+    text: 'mire sa "krmačicom" na velikoj balksanskoj turi ~3000km',
+    url: '/putesestvije',
+    css_class: 'img3',
+    intro: 'Mire na putu po balkanskom polustrvu',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    datum: 'avgust 2019',
+  },
+  {
+    name: 'stara',
+    heading: 'stara',
+    text: 'tura tara - stara drugi deo',
+    url: '/stara',
+    css_class: 'img4',
+    intro:
+      'Mire i Zoran na turi od Kursumlije do Stare Koridorom 10, ~170km u spakovanih u 5 dana',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    datum: 'avgust 2016',
+  },
+  {
+    name: 'vlasina',
+    heading: 'Vlasina',
+    text: 'mire i zoran u pohodu na Vlasinu',
+    url: '/vlasina',
+    css_class: 'img5',
+    intro:
+      'od leskovca preko vlasotinca do vlasinskog jezera ~120mnv pa preko Surdulice i Gadzinog hana na Prokuplje i Kursumliju',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    datum: 'jul 2019',
+  },
+  {
+    name: 'vinatovača',
+    heading: 'vinatovača',
+    text: 'prašuma Vinatovača',
+    url: '/vinatovaca',
+    css_class: 'img6',
+    intro: 'Vinatovaca prasuma. Jedno od onih mesta gde se opet i opet vracate',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    datum: 'jul 2019',
+  },
+];
+export default links;
