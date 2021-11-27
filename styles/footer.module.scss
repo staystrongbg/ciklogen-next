@@ -1,0 +1,66 @@
+@import 'variables';
+
+.footer {
+  color: #121212;
+  background-color: #f4f4f1;
+  padding: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  position: relative;
+  .linkovi {
+    .links {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem 0;
+      list-style: none;
+      .link {
+        padding: 1rem 0;
+        a {
+          border-bottom: 4px solid transparent;
+          transition: ease 0.2s all;
+          letter-spacing: 1.1px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #121212;
+          cursor: pointer;
+          &:hover {
+            border-bottom: 4px solid $gold;
+          }
+        }
+      }
+    }
+  }
+  svg {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    fill: $gold;
+  }
+
+  .kontakt {
+    .social-icons {
+      display: flex;
+    }
+  }
+  .mapa,
+  .kontakt,
+  .linkovi {
+    h2 {
+      letter-spacing: 1.4px;
+    }
+    div {
+      font-size: 1rem;
+      padding: 1rem;
+      letter-spacing: 1px;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@import 'responsive';
