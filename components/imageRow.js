@@ -1,32 +1,43 @@
 /* eslint-disable @next/next/no-img-element */
+import { useState } from 'react';
 import resimgs from '../styles/resp_img.module.css';
-const Row = ({
-  image = null,
-  image1 = null,
-  image2 = null,
-  image3 = null,
-  column = null,
-}) => {
+
+import Modal from './Modal';
+const Row = (props) => {
+  const [src, setSrc] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className={resimgs.row}>
-      {column && (
+    <div
+      className={resimgs.row}
+      onClick={(e) => {
+        if (e.target.nodeName === 'IMG') {
+          setShowModal(true);
+          setSrc(e.target.src);
+        }
+      }}
+    >
+      {props.column && (
         <>
           <div className={resimgs.column}>
-            <img src={image1} alt='' />
-            {image3 && <img src={image3} alt='' />}
+            <img src={props.image1} alt='' />
+            {props.image3 && <img src={props.image3} alt='' />}
           </div>
           <div className={resimgs.column}>
-            <img src={image2} alt='' />
+            <img src={props.image2} alt='' />
           </div>
         </>
       )}
+      {props.image && (
+        <img
+          className={resimgs.gridImg}
+          src={props.image}
+          alt=''
+          style={{ width: '100%' }}
+        />
+      )}
 
-      <img
-        className={resimgs.gridImg}
-        src={image}
-        alt=''
-        style={{ width: '100%' }}
-      />
+      {showModal && <Modal showmodal={setShowModal} src={src} />}
     </div>
   );
 };

@@ -14,6 +14,7 @@
   flex: 50%;
   max-width: 50%;
   padding: 0 4px;
+  cursor: pointer;
 }
 
 .column img {
@@ -31,22 +32,12 @@
   height: 100%;
   display: grid;
   place-items: center;
-  /* transform: translateX(-100%); */
-  visibility: hidden;
-  z-index: 0;
   background-color: #000;
   cursor: pointer;
   transition: all ease 0.5s;
-  transform: scale(0);
+  z-index: 99;
 }
 
-.open-modal {
-  visibility: visible;
-  z-index: 10;
-  /* opacity: 1; */
-  transform: scale(1);
-  /* transform: translateX(0); */
-}
 .close-modal {
   position: absolute;
   top: 15px;
@@ -96,6 +87,7 @@
   background-color: transparent;
   color: #f3f3f3;
 }
+
 .btn {
   color: white;
   font-size: 2rem;

@@ -1,5 +1,5 @@
 import data from '../data';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Header from '../components/Header';
 import Modal from '../components/Modal';
 import { Date } from '../components/date';
@@ -10,7 +10,6 @@ import Pasus from '../components/storyPasus';
 import Row from '../components/imageRow';
 
 const Lazin = () => {
-  const [showModal, setShowModal] = useState(false);
   const info = data.filter((item) => item.name === 'lazarev kanjon');
   console.log(info);
 
@@ -21,7 +20,6 @@ const Lazin = () => {
       <div className={styles.story}>
         <Intro intro={info[0].intro} />
         <Author autor={info[0].autor} />
-        {showModal && <Modal />}
         <Pasus
           dropcap='O'
           text='dluka da se putuje mimo glavnih puteva je bila i dobra i loša...Loša zato što smo do Zlota putovali do 17h, a

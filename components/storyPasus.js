@@ -1,13 +1,13 @@
 import styles from '../styles/story.module.css';
 
-const Pasus = ({ text, dropcap = null }) => {
+const Pasus = (props) => {
   return (
     <div className={styles['story-text']}>
       <p>
-        {dropcap && (
-          <span className={styles.dropcap}>{dropcap.toUpperCase()}</span>
+        {props.dropcap && (
+          <span className={styles.dropcap}>{props.dropcap.toUpperCase()}</span>
         )}
-        {text}
+        {props.text}
       </p>
     </div>
   );
