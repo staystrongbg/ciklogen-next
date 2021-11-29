@@ -5,6 +5,7 @@ import data from '../data';
 import Link from 'next/link';
 
 export default function Home() {
+  console.log(data);
   return (
     <>
       <Head>

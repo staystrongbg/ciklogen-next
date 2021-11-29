@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import resimgs from '../styles/resp_img.module.css';
-
 import Modal from './Modal';
-const Row = (props) => {
+
+export const Row = (props) => {
   const [src, setSrc] = useState(null);
   const [showModal, setShowModal] = useState(false);
 
@@ -25,6 +25,7 @@ const Row = (props) => {
           </div>
           <div className={resimgs.column}>
             <img src={props.image2} alt='' />
+            {props.image4 && <img src={props.image4} alt='' />}
           </div>
         </>
       )}
@@ -41,5 +42,3 @@ const Row = (props) => {
     </div>
   );
 };
-
-export default Row;

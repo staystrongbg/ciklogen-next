@@ -1,6 +1,6 @@
 import styles from '../styles/story.module.css';
 
-const Pasus = (props) => {
+export const Pasus = (props) => {
   return (
     <div className={styles['story-text']}>
       <p>
@@ -12,5 +12,3 @@ const Pasus = (props) => {
     </div>
   );
 };
-
-export default Pasus;

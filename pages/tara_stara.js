@@ -1,28 +1,34 @@
-/* eslint-disable @next/next/no-img-element */
-import data from '../data';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
+import data from '../data';
 import Header from '../components/Header';
-import Modal from '../components/Modal';
 import { Date } from '../components/date';
 import { Intro } from '../components/intro';
 import { Author } from '../components/author';
+import { Pasus } from '../components/storyPasus';
+import { Row } from '../components/imageRow';
 import styles from '../styles/story.module.css';
-import Pasus from '../components/storyPasus';
-import Row from '../components/imageRow';
-
 const Tara = () => {
-  const [showModal, setShowModal] = useState(false);
-  console.log(data);
-  const info = data.filter((item) => item.name === 'tara-Stara');
+  const [loc] = useState(useRouter().pathname);
+  const [info] = useState(data.filter((item) => item.url === loc));
+  const [elementi] = useState({
+    header: info[0],
+    datum: info[0].datum,
+    intro: info[0].intro,
+    autor: info[0].datum,
+  });
+  const path = (x) => {
+    return info[0].photos[x].src;
+  };
 
   return (
     <>
-      <Header info={info[0]} />
-      <Date date={info[0].datum} />
+      <Header header={elementi.header} />
+      <Date date={elementi.datum} />
       <div className={styles.story}>
-        <Intro intro={info[0].intro} />
-        <Author autor={info[0].autor} />
-        {showModal && <Modal />}
+        <Intro intro={elementi.intro} />
+        <Author autor={elementi.autor} />
+
         <Pasus
           dropcap='T'
           text='he best climb is of course
@@ -30,7 +36,7 @@ const Tara = () => {
         a personal experience and every climb can deliver multiple experiences
         depending on the weather, your legs, your state of mind. The climb.'
         />
-        <Row image='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara1_hi51po.jpg' />
+        <Row image={info[0].photos[0].src} />
 
         <Pasus
           text='The best climb is of course subjective. As I’ve noted before in this
@@ -40,8 +46,8 @@ const Tara = () => {
         />
         <Row
           column
-          image1='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara2_q4loao.jpg'
-          image2='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara3_pt8wfd.jpg'
+          image1={info[0].photos[1].src}
+          image2={info[0].photos[2].src}
         />
         <Pasus
           text='A babbling river beside you, ice cold snow melt free after a winter
@@ -60,8 +66,8 @@ const Tara = () => {
         />
         <Row
           column
-          image1='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara4_bgldbn.jpg'
-          image2='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara5_xclmfk.jpg'
+          image1={info[0].photos[3].src}
+          image2={info[0].photos[4].src}
         />
 
         <Pasus
@@ -82,8 +88,8 @@ const Tara = () => {
 
         <Row
           column
-          image1='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara6_mzhy7v.jpg'
-          image2='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara7_iuibic.jpg'
+          image1={info[0].photos[5].src}
+          image2={info[0].photos[6].src}
         />
 
         <Pasus

@@ -18,7 +18,7 @@
 }
 
 .column img {
-  /* margin-top: 8px; */
+  margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
@@ -34,22 +34,43 @@
   place-items: center;
   background-color: #000;
   cursor: pointer;
-  transition: all ease 0.5s;
+  animation: sizeUp 0.5s ease;
   z-index: 99;
+}
+
+@keyframes sizeUp {
+  0% {
+    transform: scale(0.1);
+    border-radius: 50%;
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .close-modal {
   position: absolute;
   top: 15px;
   right: 15px;
-  color: #fff;
+  color: #000;
   font-size: 1.5rem;
   border: none;
   background-color: transparent;
+  background: skyblue;
+  border-radius: 50%;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  width: 30px;
 }
 .close-modal:hover {
-  background-color: transparent;
-  color: #fff;
+  fill: #fff;
 }
 .modal-img {
   height: 100vh;
@@ -89,11 +110,14 @@
 }
 
 .btn {
-  color: white;
+  color: rgba(255, 255, 255, 0.1);
   font-size: 2rem;
   font-weight: 100;
   border: none;
   background-color: transparent;
+}
+.btn:hover {
+  opacity: 1;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-height: 600px) {

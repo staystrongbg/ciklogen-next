@@ -1,24 +1,34 @@
+import { useRouter } from 'next/router';
+import { Children, useState } from 'react';
 import data from '../data';
-import { useState, useRef, useEffect } from 'react';
 import Header from '../components/Header';
-import Modal from '../components/Modal';
 import { Date } from '../components/date';
 import { Intro } from '../components/intro';
 import { Author } from '../components/author';
+import { Pasus } from '../components/storyPasus';
+import { Row } from '../components/imageRow';
 import styles from '../styles/story.module.css';
-import Pasus from '../components/storyPasus';
-import Row from '../components/imageRow';
-
 const Lazin = () => {
-  const info = data.filter((item) => item.name === 'lazarev kanjon');
+  const [loc] = useState(useRouter().pathname);
+  const [info] = useState(data.filter((item) => item.url === loc));
+  const [elementi] = useState({
+    header: info[0],
+    datum: info[0].datum,
+    intro: info[0].intro,
+    autor: info[0].datum,
+  });
 
+  const path = (x) => {
+    return info[0].photos[x].src;
+  };
   return (
     <>
-      <Header info={info[0]} />
-      <Date date={info[0].datum} />
+      <Header header={elementi.header} />
+      <Date date={elementi.datum} />
       <div className={styles.story}>
-        <Intro intro={info[0].intro} />
-        <Author autor={info[0].autor} />
+        <Intro intro={elementi.intro} />
+        <Author autor={elementi.autor} />
+
         <Pasus
           dropcap='O'
           text='dluka da se putuje mimo glavnih puteva je bila i dobra i loša...Loša zato što smo do Zlota putovali do 17h, a
@@ -39,7 +49,7 @@ const Lazin = () => {
         <Pasus
           text=' Dalje put pored Brestovačke banje skreće oštro levo ka Zlotu. Tim putem se ide nekih 20ak km do Lazareve
         pećine gde ćemo se na brzaka prepakovati i promeniti prevozno sredstvo.
-
+        
         Oko 17h stižemo i do našeg odredišta, nemamo mnogo vremena pa nam valja ubrzati prepakivanje i uputiti se nekud
         i naći mesto za kamp. Posle kratkog ispitivanja terena odlučili smo da krenemo ka Velikom, centralnom vidikovcu
         do kojeg vodi betonska stazica, ali je prilično nezgodna za bajs. Nagib je veliki a stazica neravna i uska, te
@@ -49,7 +59,7 @@ const Lazin = () => {
         <Row image='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638003179/ciklogen/lazin4_r4ko6s.jpg' />
         <Pasus
           text='Pećinu tog dana nismo stigli da ragledamo pošto je otvorena do 16h.
-        Već je sunce zašlo kada smo stigli do vidikovca, a imali smo sreće da tu i nadjemo lepo mesto za prenoćište,
+          Već je sunce zašlo kada smo stigli do vidikovca, a imali smo sreće da tu i nadjemo lepo mesto za prenoćište,
         neposredno ispod vidikovca.'
         />
         <Row
@@ -60,7 +70,7 @@ const Lazin = () => {
 
         <Pasus
           text='Lazin kanjon je odavde predivan, Visina vidikovca je nešto preko 400m. Biti ovde i okružen samo orlovima je
-        čudesan
+          čudesan
         osećaj! Osećaj potpune spokojnosti i sreće. Čula su izoštrena i upijaju svaki zvuk svaku sliku u datom trenutku
         koji se
         nikada više neće ponoviti. Kanjon je kuća mnogih vrsta životinja koje su i jedini stanovnici, ovo mesto je
@@ -86,7 +96,7 @@ const Lazin = () => {
 
         <Pasus
           text='Cela avantura je bila jako spontana. Ne mogu ni da kažem da smo bili dobro organizovani i pripremljeni. Ali
-        Lazarev
+          Lazarev
         kanjon te zove sebi, i ne možeš da ga odbiješ. Pa smo ujutro krenuli dalje. Uputili smo se stazicom koju smo
         prošli na
         putu ka vidikovcu. Kojom je moguće ići biciklom kratko, jer postaje neprohodna i bajs je moguće samo nositi.
@@ -153,8 +163,8 @@ const Lazin = () => {
           image2='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638003181/ciklogen/lazin12_qt36t3.jpg'
         />
         <Pasus
-          text='        Ostavljamo auto i bajsevima krećemo put prašume. Posle 13km vožnje prelepim makadamskim putom, prvo kroz klisuru
-        Resave, pa zatim kroz Ravnu Reku stižemo do Vinatovače u mrak. Nekako smo uz baterijske lampe uspeli da
+          text='Ostavljamo auto i bajsevima krećemo put prašume. Posle 13km vožnje prelepim makadamskim putom, prvo kroz klisuru
+          Resave, pa zatim kroz Ravnu Reku stižemo do Vinatovače u mrak. Nekako smo uz baterijske lampe uspeli da
         podignemo kamp
         na brzaka i proverimo koliko je to bilo moguće kamp mesto, koje se nalazilo uz reku i jako blizu izvoru pijaće
         vode.'
@@ -182,8 +192,8 @@ const Lazin = () => {
         <Row image='https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638003181/ciklogen/lazin15_ibfolg.jpg' />
         <Pasus
           text='Spust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,
-        koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju
-        uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od
+          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju
+          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od
         Vinatovače, obećavši da ćemo opet doći'
         />
       </div>
