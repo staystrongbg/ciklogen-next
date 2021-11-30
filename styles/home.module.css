@@ -210,7 +210,7 @@
   }
 }
 .sepia {
-  filter: sepia();
+  filter: sepia(60%);
 }
 
 .img0 {
