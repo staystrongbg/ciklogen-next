@@ -8,7 +8,21 @@ const links = [
     intro: 'Maksa, Djole i ekipa na hiking turi',
     autor: 'piskaranje i slike by Maksa',
     datum: 'leto 2019',
-    photos: [],
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224662/ciklogen/ACtC-3cysEFtO6-TbxT6GriowU41vHXzZ43RResoM6a4mGfDpPTDubfk4WzllIZdCEoi9gh7pcwPBSsbMVOxaHHrAvDCQdL8eGlRNMWgSSkqUINDauetOD_GAFDS2nVgaH8jfLx2EjJkcjWbcEZlQ6rF0TGX_w1680-h948-no_y4xxqv.jpg',
+        id: 0,
+      },
+    ],
+    content: [
+      {
+        dropcap: 't',
+        text: 'he best climb is of course        subjective. As I’ve noted before in this blog post, mountain climbs are        a personal experience and every climb can deliver multiple experiences       depending on the weather, your legs, your state of mind. The climb.',
+        id: 1,
+        image:
+          'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224662/ciklogen/ACtC-3cysEFtO6-TbxT6GriowU41vHXzZ43RResoM6a4mGfDpPTDubfk4WzllIZdCEoi9gh7pcwPBSsbMVOxaHHrAvDCQdL8eGlRNMWgSSkqUINDauetOD_GAFDS2nVgaH8jfLx2EjJkcjWbcEZlQ6rF0TGX_w1680-h948-no_y4xxqv.jpg',
+      },
+    ],
   },
   {
     name: 'fruška gora',
@@ -178,7 +192,12 @@ const links = [
     intro: 'Mire na putu po balkanskom polustrvu',
     autor: 'Piskaranje i slike by Zoran Lazarevic',
     datum: 'avgust 2019',
-    photos: [],
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224729/ciklogen/ACtC-3dk1x2BOLIkvYm-0cXJ66EcCYXDwoLpo3lDcZNwxFT36j_zQSgY6tOsn7Jx8eplVWAq-VpYy4pN7BsjdNbsnCF6K_yCWBJWv5KVNf8GEdjXTwvbMEW3SFK3vY4hVpvR7tThhbuv271ekFV2cx_Prtgw_w1264-h949-no_kbjwbn.jpg',
+        id: 0,
+      },
+    ],
   },
   {
     name: 'stara',
@@ -190,7 +209,12 @@ const links = [
       'Mire i Zoran na turi od Kursumlije do Stare Koridorom 10, ~170km u spakovanih u 5 dana',
     autor: 'Piskaranje i slike by Zoran Lazarevic',
     datum: 'avgust 2016',
-    photos: [],
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224793/ciklogen/ACtC-3d4r0DZI25qX-TSubu39RCBJNUgXXf54kh3iRoohaCyqTa0JFoNGzszOamUhUnd6WOdrJn7AOIFDpd1uLGASNlkmlDp7MHMbytUMeNNCHGG5coMQEvtvUUYC8MHxFs8sRD4aU3OjF0woDyv6GwZUi_Q_w1264-h948-no_gc3pzn.jpg',
+        id: 0,
+      },
+    ],
   },
   {
     name: 'vlasina',
@@ -202,7 +226,12 @@ const links = [
       'od leskovca preko vlasotinca do vlasinskog jezera ~120mnv pa preko Surdulice i Gadzinog hana na Prokuplje i Kursumliju',
     autor: 'Piskaranje i slike by Zoran Lazarevic',
     datum: 'jul 2019',
-    photos: [],
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224828/ciklogen/ACtC-3fc5IZC47YgobSciYlydN9-kNvnyseoYXsyzt2CwlgyZVD1yl-RNMLwBZD1HzI8ddRoQzE76XwhMB-5WnX2_jv4Wp4vHw4cP6LPa-CqDrEDizXxGOiAh-lbO9UF2mU8sKgxYxqJdeUcfTcMmKrD7uQW_w1264-h949-no_omzshe.jpg',
+        id: 0,
+      },
+    ],
   },
   {
     name: 'vinatovača',
@@ -213,7 +242,20 @@ const links = [
     intro: 'Vinatovaca prasuma. Jedno od onih mesta gde se opet i opet vracate',
     autor: 'Piskaranje i slike by Zoran Lazarevic',
     datum: 'jul 2019',
-    photos: [],
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224864/ciklogen/ACtC-3dfcTbsJyl0sLtP1XlwaAHUtWB8j-28aN1GIJ1BxJN3tEpFEFCvFOfBYw5WCMCBmX6dORE6MCS8awdK7JdvGHLjFPPzrYFXX7h3D0OkigdyU9e7ecnI-Pu81xQoanr_idAZeZcRvUOC4mW5ozlgADyK_w1264-h949-no_bgtjtc.jpg',
+        id: 0,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638269672/ciklogen/ACtC-3fYHL7nd90aGASx7l8-aPhJesE8nFMZpL-NXdT8olit6laH07_4aBIxF4JH1bnJz5IA6lDAZDOR0PIm_8Bfl899PszchK6ITzjIUt0vQNzkxIC-s-9Njg28-LspKN7IDf4gk9gGOVUbj7uX_gZWjbDi_w1264-h949-no_l3uxjg.jpg',
+        id: 1,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638269626/ciklogen/ACtC-3fOkPKfUeTUdMUksQKpK1h2zgNieu2Hn0KLrP_HMsELSB6ZLGkjZ6aqL2gwJ27fEbVobln7fGhGVeQ0wtNpNZsGTJbz-FHLaWUKJJB7EL_XHD_q7fHdxHt_N5ZzDevTwwfr2QC-8Nu7C337WT6jKcmN_w1264-h948-no_fwukz1.jpg',
+        id: 2,
+      },
+    ],
   },
 ];
 export default links;

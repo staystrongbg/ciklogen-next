@@ -1,34 +1,17 @@
-import { useRouter } from 'next/router';
-import { useState } from 'react';
-import data from '../data';
-import Header from '../components/Header';
-import { Date } from '../components/date';
-import { Intro } from '../components/intro';
-import { Author } from '../components/author';
-import { Pasus } from '../components/storyPasus';
-import { Row } from '../components/imageRow';
-import styles from '../styles/story.module.css';
-const Stara = () => {
-  const [loc] = useState(useRouter().pathname);
-  const [info] = useState(data.filter((item) => item.url === loc));
-  const [elementi] = useState({
-    header: info[0],
-    datum: info[0].datum,
-    intro: info[0].intro,
-    autor: info[0].datum,
-  });
-  const path = (x) => {
-    return info[0].photos[x].src;
-  };
-
+import Sablon from '../components/sablon';
+import Head from 'next/head';
+const Stara = (fotke) => {
   return (
     <>
-      <Header header={elementi.header} />
-      <Date date={elementi.datum} />
-      <div className={styles.story}>
-        <Intro intro={elementi.intro} />
-        <Author autor={elementi.autor} />
-      </div>
+      <Head>
+        <title>C I K L O G E N C R E W - Stara</title>
+        <meta
+          name='description'
+          content='ciklogen | spuštamo se da bismo se peli'
+        />
+        <link rel='icon' href='/favicon.ico' />
+      </Head>
+      <Sablon content={fotke.stara} />
     </>
   );
 };

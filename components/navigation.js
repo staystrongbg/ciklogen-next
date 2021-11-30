@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import Logo from '../public/logo/ciklogen.svg';
+import Logo from '../public/logo/ciklogen_cir.svg';
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);

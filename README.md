@@ -1,34 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# pravila koriscenja aplikacije
 
-## Getting Started
+- potrebno je imati na svakoj stranici content
+- potrebno je imati u data fajlu photos
+- ako imamo jednu sliku uz jedan pasus korision image
+- ako imamo 2,3 ili 4 slike koristimo image1,image2,image3 dakle image bez sufiksa izostavljamo i dodajemo flag `column:true` koji je zapravo klasa koja postavlja slicice na 50% width, image ih postavlja na 100%
+- za pasuse koristimo prop text i ako je prvi pasus u tekstu mozemo postaviti flag `dropcap='x'`
 
-First, run the development server:
+## objasnjenje
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- content na svakoj stranici je potreban jer iz njega **Sablon** komponenta iscitava sadrzaj za tu stranicu(fotke i tekst) / fotke - src / tekst - tekst
+- Modal komponenti treba photos iz data fajla / tako pravi niz slika za slajd/ uneti src za svaku sliku
+- da bi modal radio pravilno, startIndex mora biti definisan. /prop src === photos.src jer se tako setuje index koji sluzi za slajd funkciju
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- ne menja ti document title kad menjas url!

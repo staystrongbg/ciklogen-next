@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import resimgs from '../styles/resp_img.module.css';
 import Modal from './Modal';
 

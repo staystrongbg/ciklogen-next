@@ -1,15 +1,19 @@
 /* eslint-disable @next/next/no-img-element */
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import data from '../data';
 import styles1 from '../styles/resp_img.module.css';
-const Modal = ({ src, showmodal }) => {
-  const [slides, setSlides] = useState(
-    data.filter((u) => u.url === location.pathname).map((i) => i.photos)
-  );
-  console.log(slides[0]);
-  const [error, setError] = useState(false);
+import { useRouter } from 'next/router';
 
+const Modal = ({ src, showmodal }) => {
+  const [loc] = useState(useRouter().pathname);
+
+  console.log(src);
+  const [slides, setSlides] = useState(
+    data.filter((u) => u.url === loc).map((i) => i.photos)
+  );
+  console.log(slides);
+  const [error, setError] = useState(false);
   const startIndex = slides[0].find((slide) => slide.src === src);
   let [index, setIndex] = useState(startIndex.id);
 

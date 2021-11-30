@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>C I K L O G E N C R E W</title>
+        <title>C I K L O G E N C R E W - Welcome</title>
         <meta
           name='description'
           content='ciklogen | spuštamo se da bismo se peli'
