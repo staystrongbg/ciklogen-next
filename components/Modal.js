@@ -8,11 +8,9 @@ import { useRouter } from 'next/router';
 const Modal = ({ src, showmodal }) => {
   const [loc] = useState(useRouter().pathname);
 
-  console.log(src);
   const [slides, setSlides] = useState(
     data.filter((u) => u.url === loc).map((i) => i.photos)
   );
-  console.log(slides);
   const [error, setError] = useState(false);
   const startIndex = slides[0].find((slide) => slide.src === src);
   let [index, setIndex] = useState(startIndex.id);
@@ -29,11 +27,19 @@ const Modal = ({ src, showmodal }) => {
     <>
       {slides && (
         <div className={styles1['modal-overlay']}>
-          <img
-            className={styles1['modal-img']}
-            src={slides[0][index].src}
-            alt=''
-          />
+          <div className={styles1.imgContainer}>
+            <img
+              className={styles1['modal-img']}
+              src={slides[0][index].src}
+              alt=''
+            />
+            <button
+              className={styles1['close-modal']}
+              onClick={() => showmodal(false)}
+            >
+              <FaTimes />
+            </button>
+          </div>
 
           <div className={styles1['btns']}>
             <button className={`${styles1.left} ${styles1.btn}`}>
@@ -46,13 +52,6 @@ const Modal = ({ src, showmodal }) => {
               />
             </button>
           </div>
-
-          <button
-            className={styles1['close-modal']}
-            onClick={() => showmodal(false)}
-          >
-            <FaTimes />
-          </button>
         </div>
       )}
       {error && <h1>Nothing to show...</h1>}

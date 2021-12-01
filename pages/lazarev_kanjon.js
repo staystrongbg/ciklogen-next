@@ -1,7 +1,6 @@
 import Sablon from '../components/sablon';
 import Head from 'next/head';
 const Lazin = (fotke) => {
-  console.log(fotke);
   return (
     <>
       <Head>

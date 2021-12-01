@@ -30,7 +30,11 @@ const Sablon = ({ content }) => {
         <Author autor={elementi.autor} />
         {content.map((item) => (
           <div key={item.id}>
-            <Pasus text={item.text} dropcap={item.dropcap && item.dropcap} />
+            <Pasus
+              text={item.text}
+              dropcap={item.dropcap && item.dropcap}
+              blockquote={item.blockquote && item.blockquote}
+            />
             <Row
               column={item.column && item.column}
               image={item.image && item.image}

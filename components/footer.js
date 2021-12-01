@@ -1,8 +1,14 @@
-import { FaFacebook, FaGooglePlus, FaTwitter } from 'react-icons/fa';
+import {
+  FaFacebook,
+  FaGooglePlus,
+  FaInstagram,
+  FaTwitter,
+} from 'react-icons/fa';
 import styles from '../styles/home.module.css';
 import styles2 from '../styles/story.module.css';
 import Image from 'next/image';
-import Logo from '../public/logo/ciklogen.svg';
+import Logo from '../public/logo/ciklogen_cir.svg';
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -18,6 +24,7 @@ const Footer = () => {
           <FaFacebook />
           <FaTwitter />
           <FaGooglePlus />
+          <FaInstagram />
         </div>
         <p>&copy; C I K L O G E N 2020</p>
       </div>

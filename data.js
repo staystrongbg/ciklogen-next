@@ -13,21 +13,24 @@ const links = [
         src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224662/ciklogen/ACtC-3cysEFtO6-TbxT6GriowU41vHXzZ43RResoM6a4mGfDpPTDubfk4WzllIZdCEoi9gh7pcwPBSsbMVOxaHHrAvDCQdL8eGlRNMWgSSkqUINDauetOD_GAFDS2nVgaH8jfLx2EjJkcjWbcEZlQ6rF0TGX_w1680-h948-no_y4xxqv.jpg',
         id: 0,
       },
-    ],
-    content: [
       {
-        dropcap: 't',
-        text: 'he best climb is of course        subjective. As I’ve noted before in this blog post, mountain climbs are        a personal experience and every climb can deliver multiple experiences       depending on the weather, your legs, your state of mind. The climb.',
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638371100/ciklogen/ACtC-3dewi5WmVbDRsVyVMAW4JSehDjf9kGw4jx0KD5dCCB03lxsHY9ocmcXbab-UFrRrY-yqGFZlbYrPcYQ6bQQlh2PRndEVegyACCQmOenftyuZpAt_TuEyYlHhE8SYocZkRifF2K2KgORDFRUaZIsxgYL_w1680-h948-no_i9jlfi.jpg',
         id: 1,
-        image:
-          'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224662/ciklogen/ACtC-3cysEFtO6-TbxT6GriowU41vHXzZ43RResoM6a4mGfDpPTDubfk4WzllIZdCEoi9gh7pcwPBSsbMVOxaHHrAvDCQdL8eGlRNMWgSSkqUINDauetOD_GAFDS2nVgaH8jfLx2EjJkcjWbcEZlQ6rF0TGX_w1680-h948-no_y4xxqv.jpg',
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638372931/ciklogen/ACtC-3fOMHgF9U9JhVn35spKxJYDy9yVm7uLCOtfXOWpcIjZgHudpXfVuhxI6G769gXnmpQFcIWJvFnmKlESQDQlBFkHmJI1Ch3xPlx9eua_tp9INl_SBZUnS5qQStQ4gVzh9IVZXkZtV62ZVmqnsVvchJsBwA_w711-h948-no_vmovo3.jpg',
+        id: 2,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638372950/ciklogen/ACtC-3enaBdtY1xlgQXm0GoD8KQqzCGSw4qez1XFe5TITpqkMopadpKtgcjhvmZhBILXB1GcBOReL_0YbNbQG03K58XRQCJaMyK3Ex-teZngLxkjO8bOSOtiH0kkT-RRHu16SAWUMOCpmh1m0kisD2TX-wRG_w1680-h948-no_rtud2a.jpg',
+        id: 3,
       },
     ],
   },
   {
     name: 'fruška gora',
     heading: 'fruška gora',
-    text: 'naša draga fruška gora',
+    text: 'naša druga kuća',
     url: '/fruska_gora',
     css_class: 'img0',
     intro:
@@ -230,6 +233,18 @@ const links = [
       {
         src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638224828/ciklogen/ACtC-3fc5IZC47YgobSciYlydN9-kNvnyseoYXsyzt2CwlgyZVD1yl-RNMLwBZD1HzI8ddRoQzE76XwhMB-5WnX2_jv4Wp4vHw4cP6LPa-CqDrEDizXxGOiAh-lbO9UF2mU8sKgxYxqJdeUcfTcMmKrD7uQW_w1264-h949-no_omzshe.jpg',
         id: 0,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638347022/ciklogen/ACtC-3c0e1XtUYlZ7LI_L4GLxvOlwuS-7UCnPQyOiVM3o0ggPNg4K7I4I9rbGY3CpEIXH9yEzoUNZgBH_HN-moTVVgj5hhmqx5Be8NVy94JBKrAZM-fEdD3WrqSknY9-rV5DwbKbpJ3vONhVXqmmrmvH0IGZ_w1264-h949-no_ig0znc.jpg',
+        id: 1,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638347055/ciklogen/ACtC-3frM67K0xHtDmeAxUkKeKYX3bQ_ed6eWzwFKr5-Ac7GSWiR4hQAAL9pv2i6YMDOMHyBYVdQylN8au6sFvZ1YEqpZIOhDK8LawObS-tUUk3WidlRVWTxRMUGjc427iJnCoD0VJrZSBBqEyEYS4NuqTDQ_w1264-h949-no_jmoq58.jpg',
+        id: 2,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638347003/ciklogen/ACtC-3cASQXiczTt3IrShL4_WZ30UuSfvloejs4MNjBgyuZOmZUNdlajuk-dSkPby2m_pVvUji38_h_6ADR_2-whtdyz9QvS85jyyw5vyIYPBaUBx3gbrHZiGx73AcJG7e0yoiuazYvkfnOcwQYrqs2unujQ_w1264-h949-no_lstczy.jpg',
+        id: 3,
       },
     ],
   },

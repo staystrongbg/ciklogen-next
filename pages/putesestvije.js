@@ -2,7 +2,6 @@ import Sablon from '../components/sablon';
 import Head from 'next/head';
 
 const Putesestvije = (fotke) => {
-  console.log(fotke);
   return (
     <div>
       <Head>

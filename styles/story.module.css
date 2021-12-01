@@ -46,10 +46,11 @@
 }
 .podnaslov {
   font-size: 2.5rem;
-  color: #f2f1ee;
+  color: #d1d1d1;
   font-weight: 700;
   font-family: 'Pacifico';
   font-style: italic;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .author {

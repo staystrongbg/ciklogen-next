@@ -1,11 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
 import styles from '../styles/home.module.css';
 import data from '../data';
 import Link from 'next/link';
 
 export default function Home() {
-  console.log(data);
   return (
     <>
       <Head>
