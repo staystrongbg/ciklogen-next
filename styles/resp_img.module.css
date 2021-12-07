@@ -5,7 +5,8 @@
   flex-wrap: wrap;
   padding: 0 4px;
   justify-content: center;
-  margin: 40px 0 40px 0;
+  margin: 40px auto;
+  max-width: 80%;
 }
 
 /* Create four equal columns that sits next to each other  STAVI PO DVE DA BUDU U REDU*/
@@ -43,7 +44,7 @@
   place-items: center;
   background-color: rgba(0, 0, 0, 0.9);
   cursor: pointer;
-  animation: sizeUp 0.5s ease;
+  /* animation: sizeUp 0.5s ease; */
   z-index: 99;
 }
 
@@ -67,12 +68,12 @@
   position: absolute;
   top: -15px;
   right: -15px;
-  color: #fff;
+  color: #000;
   font-size: 1.5rem;
   border: none;
   background-color: transparent;
-  background: crimson;
-  border-radius: 50%;
+  background: #fff;
+  /* border-radius: 50%; */
   height: 30px;
   display: grid;
   place-items: center;
@@ -118,11 +119,11 @@
   .close-modal {
     top: -5px;
     right: -5px;
-    color: #fff;
+    color: #000;
     font-size: 1rem;
     border: none;
     background-color: transparent;
-    background: crimson;
+    background: #fff;
     border-radius: 50%;
     height: 20px;
     display: grid;
