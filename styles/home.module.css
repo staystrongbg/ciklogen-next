@@ -82,13 +82,15 @@
   position: fixed;
   top: 25px;
   right: 25px;
-  background-color: transparent;
-  /* fill: #000; */
-  fill: #f2f1ee;
-  filter: drop-shadow(1px 1px 1px #000);
+  background-color: #fff;
+  padding: 0.345rem;
+  /* border-radius: 50%; */
+  fill: #000;
+
+  /* filter: drop-shadow(1px 1px 1px #000); */
   border: none;
   z-index: 9;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 /* end of sidebar */
@@ -203,6 +205,12 @@
   object-fit: cover;
   object-position: center;
 }
+
+.createdBy {
+  background-color: #000;
+  width: 100%;
+  font-size: 1rem;
+}
 @media screen and (max-width: 992px) {
   .riders {
     display: grid;
@@ -245,7 +253,10 @@
   background-image: url('https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637951438/ciklogen/zelengora_xzpdld.jpg');
   background-position: 50% 50%;
 }
-
+.img8 {
+  background-image: url('https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638878052/ciklogen/jastrebac/IMG_20150412_150055_uqj3xa.jpg');
+  background-position: 50% 50%;
+}
 /* Position text in the middle of the page/image */
 
 /* index page elementi */
