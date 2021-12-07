@@ -117,6 +117,16 @@
       "column": true,
       "image1": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara6_mzhy7v.jpg",
       "image2": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara7_iuibic.jpg"
+    },
+    {
+      "text": "A babbling river beside you, ice cold snow melt free after a winter          frozen in captivity, rushing down the mountain as if there will be no          tomorrow. That’ll be you later. First, I compete against myself and          against the hill, not others. Every passing year is a vain (in both          senses of the word) fight against time, decay and deterioration. Age          is not kind to the hill climber. VO2max declines by 1% every year, our          maximum heart rate slows, our muscles weaken and recovery takes          longer. mountain as if there will be no tomorrow. That’ll be you          later. First, I compete against myself and against the hill, not          others. Every passing year is a vain (in both senses of the word)          fight against time, decay and deterioration. Age is not kind to the          hill climber. VO2max declines by 1% every year, our maximum heart rate          slows, our muscles weaken and recovery takes longer.",
+      "column": true,
+      "id": 5,
+
+      "image1": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387599/ciklogen/AM-JKLWVuuM_bD0orBC-btMSwk5V_V7FCVzMmKp2cPcnaz_sjBFjVqqMrLyn4zTLsg0rYIQCENAmro-WOSjDDFzrte2ByLXMD_bDwdMRcP_uI6VeF3TmRNtFUZ98aCWrYkdmk0pt1B9orj476mOyDh6LWUb2_w1250-h937-no_kbaufi.jpg",
+      "image2": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387684/ciklogen/AM-JKLWrTTkMJNayquvodnyhS_lGCWXGhRcDsena3l9W2gp1nJuY5D-P1_ubo5_FwflDbcP61rpy50MDZ3XhlXpMop_RpA0O_nJHzp_WUllUon_xh4aSgqiye3AxF6mRErZ5y9wIrxZ0iLDrTUwfG7Xw1Ztj_w1250-h937-no_bqlnkk.jpg",
+      "image3": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387716/ciklogen/AM-JKLWwmGGCFhnSo2ry_OC7B7FyS-29-nbkRx3_FcdAhY8ymBe52a9BgaiVDr0GtFyQVp2_Zf7MZWshwaMDAZoODELDFe9GBN2Z5AoeUqKLnjuZBK3XBzwfUdR1UK77vYqyz0JLgz-8_O_Ia6jT1oAhMP-N_w1250-h937-no_hj8ist.jpg",
+      "image4": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387781/ciklogen/AM-JKLWg44sGgQLa0KHRnKKyKk0XKVo19xSUCwbo-Jg02kWMjPfF2YRVTivrbIWinzd_LGqEEQfKxjHzm8EDjNg0-wDNHiWsGCrUEWh0OrKH3YUT-84D14QrvvZVko870tvsybMwgqxvYF0a6VU6AgpkE9GM_w1250-h937-no_cwrr7f.jpg"
     }
   ],
   "stara": [
@@ -224,6 +234,31 @@
     {
       "id": 14,
       "text": "Spust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći"
+    }
+  ],
+  "jastrebac": [
+    {
+      "id": 1,
+      "dropcap": "S",
+      "text": "pust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
+      "image": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638878052/ciklogen/jastrebac/IMG_20150412_150055_uqj3xa.jpg"
+    },
+    {
+      "id": 2,
+      "text": "Spust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
+      "image": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877936/ciklogen/jastrebac/IMG_20150412_102627_lbsp5o.jpg"
+    },
+    {
+      "id": 3,
+      "text": "Spust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
+      "image1": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877984/ciklogen/jastrebac/IMG_20150412_124125_lzyequ.jpg",
+      "image2": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638878022/ciklogen/jastrebac/IMG_20150412_130448_w1kqfk.jpg",
+      "column": true
+    },
+    {
+      "id": 4,
+      "text": "pust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
+      "image": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877943/ciklogen/jastrebac/IMG_20150412_111509_jlrnvj.jpg"
     }
   ]
 }

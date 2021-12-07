@@ -183,6 +183,22 @@ const links = [
         src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1637969974/ciklogen/tara7_iuibic.jpg',
         id: 6,
       },
+      {
+        id: 7,
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387599/ciklogen/AM-JKLWVuuM_bD0orBC-btMSwk5V_V7FCVzMmKp2cPcnaz_sjBFjVqqMrLyn4zTLsg0rYIQCENAmro-WOSjDDFzrte2ByLXMD_bDwdMRcP_uI6VeF3TmRNtFUZ98aCWrYkdmk0pt1B9orj476mOyDh6LWUb2_w1250-h937-no_kbaufi.jpg',
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387684/ciklogen/AM-JKLWrTTkMJNayquvodnyhS_lGCWXGhRcDsena3l9W2gp1nJuY5D-P1_ubo5_FwflDbcP61rpy50MDZ3XhlXpMop_RpA0O_nJHzp_WUllUon_xh4aSgqiye3AxF6mRErZ5y9wIrxZ0iLDrTUwfG7Xw1Ztj_w1250-h937-no_bqlnkk.jpg',
+        id: 8,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387716/ciklogen/AM-JKLWwmGGCFhnSo2ry_OC7B7FyS-29-nbkRx3_FcdAhY8ymBe52a9BgaiVDr0GtFyQVp2_Zf7MZWshwaMDAZoODELDFe9GBN2Z5AoeUqKLnjuZBK3XBzwfUdR1UK77vYqyz0JLgz-8_O_Ia6jT1oAhMP-N_w1250-h937-no_hj8ist.jpg',
+        id: 9,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638387781/ciklogen/AM-JKLWg44sGgQLa0KHRnKKyKk0XKVo19xSUCwbo-Jg02kWMjPfF2YRVTivrbIWinzd_LGqEEQfKxjHzm8EDjNg0-wDNHiWsGCrUEWh0OrKH3YUT-84D14QrvvZVko870tvsybMwgqxvYF0a6VU6AgpkE9GM_w1250-h937-no_cwrr7f.jpg',
+        id: 10,
+      },
     ],
   },
 
@@ -269,6 +285,38 @@ const links = [
       {
         src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638269626/ciklogen/ACtC-3fOkPKfUeTUdMUksQKpK1h2zgNieu2Hn0KLrP_HMsELSB6ZLGkjZ6aqL2gwJ27fEbVobln7fGhGVeQ0wtNpNZsGTJbz-FHLaWUKJJB7EL_XHD_q7fHdxHt_N5ZzDevTwwfr2QC-8Nu7C337WT6jKcmN_w1264-h948-no_fwukz1.jpg',
         id: 2,
+      },
+    ],
+  },
+  {
+    name: 'jastrebac',
+    heading: 'jastrebac',
+    text: 'jastrebac april 2015 ',
+    url: '/jastrebac',
+    css_class: 'img8',
+    datum: 'april 2015',
+    intro: 'zimski pohod na Veliku Djulicu 1490m, Jastrebac',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638878052/ciklogen/jastrebac/IMG_20150412_150055_uqj3xa.jpg',
+        id: 0,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877936/ciklogen/jastrebac/IMG_20150412_102627_lbsp5o.jpg',
+        id: 1,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877984/ciklogen/jastrebac/IMG_20150412_124125_lzyequ.jpg',
+        id: 2,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638878022/ciklogen/jastrebac/IMG_20150412_130448_w1kqfk.jpg',
+        id: 3,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877943/ciklogen/jastrebac/IMG_20150412_111509_jlrnvj.jpg',
+        id: 4,
       },
     ],
   },
