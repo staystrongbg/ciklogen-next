@@ -126,7 +126,7 @@
   font-weight: 700;
   margin: 1rem 1.5rem 1rem 0;
   height: max-content;
-  width: 40%;
+  max-width: 40%;
   font-family: 'Roboto Slab';
   float: left;
 }
@@ -157,7 +157,9 @@
   justify-content: center;
   margin-bottom: 1rem;
 }
-
+.social-icons svg {
+  fill: rgb(235, 231, 34);
+}
 /* media querry for different screen sizes */
 @media screen and (max-height: 550px) {
   .naslov {

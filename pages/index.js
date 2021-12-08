@@ -15,10 +15,15 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      {data.map(({ heading, css_class, text, url }, idx) => (
+      {data.map(({ heading, css_class, text, url, photos }, idx) => (
         <div
           key={idx}
-          className={`${styles['bg-image']} ${styles.sepia} ${styles[css_class]}`}
+          style={{
+            backgroundImage: !css_class && `url(${photos[0].src})`,
+          }}
+          className={`${styles['bg-image']} ${styles.sepia} ${
+            styles[css_class && css_class]
+          }`}
         >
           <div className={styles['bg-text']}>
             <h3 className={styles['heading']}>{heading}</h3>

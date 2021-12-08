@@ -260,5 +260,21 @@
       "text": "pust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
       "image": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638877943/ciklogen/jastrebac/IMG_20150412_111509_jlrnvj.jpg"
     }
+  ],
+  "kosmaj": [
+    {
+      "id": 1,
+      "dropcap": "S",
+      "text": "pust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
+      "image": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888355/ciklogen/kosmaj/10353346_290710864436067_6289166654049130931_o_v2dcic.jpg"
+    },
+    {
+      "id": 2,
+      "text": "pust nazad je trajao više od jednog sata. Blaga nizbrdica, put načičkam baricama čiste vode,          koje su odlično osvežavale i ništa nije stajalo na putu do kampa. Po povratku dan smo priveli kraju          uz supicu,čaj od sveže nane koju smo tu ubrali. Sutra smo se polako spakovali i oprostili se od        Vinatovače, obećavši da ćemo opet doći",
+      "column": true,
+      "image1": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888355/ciklogen/kosmaj/10353346_290710864436067_6289166654049130931_o_v2dcic.jpg",
+      "image2": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888356/ciklogen/kosmaj/IMG_20140529_134030_rt2qfm.jpg",
+      "image3": "https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888356/ciklogen/kosmaj/IMG_20140529_165419_tdjcvm.jpg"
+    }
   ]
 }

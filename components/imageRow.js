@@ -9,6 +9,9 @@ export const Row = (props) => {
 
   return (
     <div
+      style={{
+        height: !props.image && !props.image1 && !props.image2 ? '0' : null,
+      }}
       className={resimgs.row}
       onClick={(e) => {
         if (e.target.nodeName === 'IMG') {

@@ -15,11 +15,8 @@ const Sablon = ({ content }) => {
     header: info[0],
     datum: info[0].datum,
     intro: info[0].intro,
-    autor: info[0].datum,
+    autor: info[0].autor,
   });
-  const path = (x) => {
-    return info[0].photos[x].src;
-  };
 
   return (
     <>

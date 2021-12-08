@@ -16,10 +16,7 @@ const Navbar = () => {
         onClick={() => setShowSidebar(!showSidebar)}
       >
         {showSidebar ? (
-          <FaTimes
-            className={styles['sidebar-toggle']}
-            style={{ fill: '#fff' }}
-          />
+          <FaTimes className={styles['sidebar-toggle']} />
         ) : (
           <FaBars className={styles['sidebar-toggle']} />
         )}

@@ -26,8 +26,8 @@ const Footer = () => {
           <FaGooglePlus />
           <FaInstagram />
         </div>
-        <p>&copy; C I K L O G E N 2020</p>
       </div>
+      <p className={styles.createdBy}>&copy; ciklogen 2020</p>
     </footer>
   );
 };

@@ -320,5 +320,28 @@ const links = [
       },
     ],
   },
+  {
+    name: 'kosmaj',
+    heading: 'Kosmaj - day off',
+    text: 'jednodnevni izlet',
+    url: '/kosmaj',
+    datum: 'jun 2015',
+    intro: 'U poseti komarcima sa Kosmaja',
+    autor: 'Piskaranje i slike by Zoran Lazarevic',
+    photos: [
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888355/ciklogen/kosmaj/10353346_290710864436067_6289166654049130931_o_v2dcic.jpg',
+        id: 0,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888356/ciklogen/kosmaj/IMG_20140529_134030_rt2qfm.jpg',
+        id: 1,
+      },
+      {
+        src: 'https://res.cloudinary.com/dvpyf1a8e/image/upload/v1638888356/ciklogen/kosmaj/IMG_20140529_165419_tdjcvm.jpg',
+        id: 2,
+      },
+    ],
+  },
 ];
 export default links;
